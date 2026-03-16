@@ -1,6 +1,6 @@
 import React from "react";
-import { Download } from "lucide-react";
-import { Star } from "lucide-react";
+import iconDownload from "../../assets/icon-downloads.png";
+import iconRating from "../../assets/icon-ratings.png";
 
 const AppsSection = ({ app }) => {
   const { image, title, downloads, ratingAvg } = app;
@@ -13,12 +13,12 @@ const AppsSection = ({ app }) => {
         <h2 className="card-title">{title}</h2>
       </div>
       <div className="flex justify-between mx-3 my-4">
-        <div className="px-2 py-1 rounded flex items-center space-x-2 text-[#00D390] bg-[#F1F5E8]">
-          <Download />
+        <div className="px-2 py-1 rounded-md flex items-center space-x-2 text-[#00D390] bg-[#F1F5E8]">
+          <img className="w-5" src={iconDownload} alt="" />
           <span className="text-xl font-semibold ">{downloads}</span>
         </div>
-        <div className="px-2 py-1 rounded flex items-center space-x-2 text-[#FF8811] bg-[#FFF0E1]">
-          <Star fill="#FF8811" strokeWidth={0} />
+        <div className="px-2 py-1 rounded-md flex items-center space-x-2 text-[#FF8811] bg-[#FFF0E1]">
+          <img className="w-5" src={iconRating} alt="" />
           <span className="text-xl font-semibold ">{ratingAvg}</span>
         </div>
       </div>

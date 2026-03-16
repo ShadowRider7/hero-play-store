@@ -1,7 +1,7 @@
 import React from "react";
 import logoImg from "../../assets/logo.png";
 import github from "../../assets/fi_2111432.svg";
-import { Link } from "react-router";
+import { Link, Links } from "react-router";
 
 const links = (
   <>
@@ -40,12 +40,12 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl md:ms-5 ">
+        <Link to={"/"} className="flex  items-center text-xl md:ms-5 ">
           <img className="w-10" src={logoImg} alt="" />
           <h2 className="bg-clip-text text-transparent bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
             HERO.IO
           </h2>
-        </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 space-x-5 text-xl">{links}</ul>

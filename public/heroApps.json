@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://cdn.simpleicons.org/whatsapp",
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 1,
+    "description": "Simple. Reliable. Private. WhatsApp from Meta is a FREE messaging and video calling app.",
+    "size": 145,
+    "reviews": 172000000,
+    "ratingAvg": 4.7,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 8600000 },
+      { "name": "2 star", "count": 3440000 },
+      { "name": "3 star", "count": 8600000 },
+      { "name": "4 star", "count": 25800000 },
+      { "name": "5 star", "count": 125560000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/instagram",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 2,
+    "description": "Create and share photos, stories, and reels with the friends you love.",
+    "size": 210,
+    "reviews": 145000000,
+    "ratingAvg": 4.6,
+    "downloads": 3000000000,
+    "ratings": [
+      { "name": "1 star", "count": 8000000 },
+      { "name": "2 star", "count": 4000000 },
+      { "name": "3 star", "count": 9000000 },
+      { "name": "4 star", "count": 24000000 },
+      { "name": "5 star", "count": 100000000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/spotify",
+    "title": "Spotify: Music and Podcasts",
+    "companyName": "Spotify AB",
+    "id": 3,
+    "description": "Listen to songs, play podcasts, create playlists and discover new music.",
+    "size": 95,
+    "reviews": 29000000,
+    "ratingAvg": 4.8,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 800000 },
+      { "name": "2 star", "count": 500000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 4200000 },
+      { "name": "5 star", "count": 22000000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/netflix",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 4,
+    "description": "Looking for the most talked about TV shows and movies from the around the world? They’re all on Netflix.",
+    "size": 85,
+    "reviews": 14000000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 8200000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/tiktok",
+    "title": "TikTok",
+    "companyName": "TikTok Pte. Ltd.",
+    "id": 5,
+    "description": "TikTok is THE destination for mobile videos. On TikTok, short-form videos are exciting, spontaneous, and genuine.",
+    "size": 280,
+    "reviews": 65000000,
+    "ratingAvg": 4.5,
+    "downloads": 2000000000,
+    "ratings": [
+      { "name": "1 star", "count": 4000000 },
+      { "name": "2 star", "count": 2000000 },
+      { "name": "3 star", "count": 4500000 },
+      { "name": "4 star", "count": 9500000 },
+      { "name": "5 star", "count": 45000000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/youtube",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 6,
+    "description": "Get the official YouTube app on Android phones and tablets. See what the world is watching.",
+    "size": 150,
+    "reviews": 138000000,
+    "ratingAvg": 4.3,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 12000000 },
+      { "name": "2 star", "count": 5000000 },
+      { "name": "3 star", "count": 11000000 },
+      { "name": "4 star", "count": 20000000 },
+      { "name": "5 star", "count": 90000000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/uber",
+    "title": "Uber - Request a ride",
+    "companyName": "Uber Technologies, Inc.",
+    "id": 7,
+    "description": "We’re committed to your safety at Uber. We’ve established a Door-to-Door Safety Standard to help you feel safe.",
+    "size": 115,
+    "reviews": 11000000,
+    "ratingAvg": 4.7,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 1600000 },
+      { "name": "5 star", "count": 8000000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/airbnb",
+    "title": "Airbnb",
+    "companyName": "Airbnb",
+    "id": 8,
+    "description": "Find the perfect place to stay for your next trip, discover unique homes, and book local experiences.",
+    "size": 190,
+    "reviews": 3500000,
+    "ratingAvg": 4.8,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 50000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 2800000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/x",
+    "title": "X",
+    "companyName": "X Corp.",
+    "id": 9,
+    "description": "The X app is the trusted global digital town square for everyone. Join the conversation.",
+    "size": 175,
+    "reviews": 21000000,
+    "ratingAvg": 4.2,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 12000000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/pinterest",
+    "title": "Pinterest",
+    "companyName": "Pinterest",
+    "id": 10,
+    "description": "Welcome to Pinterest, the world's inspiration explorer. Find ideas, save them, and try them out.",
+    "size": 140,
+    "reviews": 9500000,
+    "ratingAvg": 4.8,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 350000 },
+      { "name": "4 star", "count": 1300000 },
+      { "name": "5 star", "count": 7500000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/duolingo",
+    "title": "Duolingo: Language Lessons",
+    "companyName": "Duolingo",
+    "id": 11,
+    "description": "Learn a new language with the world’s most-downloaded education app! Fun, free, and effective.",
+    "size": 160,
+    "reviews": 15000000,
+    "ratingAvg": 4.7,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 600000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 2400000 },
+      { "name": "5 star", "count": 11000000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/slack",
+    "title": "Slack",
+    "companyName": "Slack Technologies Inc.",
+    "id": 12,
+    "description": "Slack brings team communication and collaboration into one place so you can get more work done.",
+    "size": 105,
+    "reviews": 1200000,
+    "ratingAvg": 4.3,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 700000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/zoom",
+    "title": "Zoom Workplace",
+    "companyName": "Zoom Video Communications, Inc.",
+    "id": 13,
+    "description": "Work anywhere with a single app that combines team chat, phone, whiteboard, and meetings.",
+    "size": 210,
+    "reviews": 3500000,
+    "ratingAvg": 4.1,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 250000 },
+      { "name": "3 star", "count": 450000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 1800000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/amazon",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon Mobile LLC",
+    "id": 14,
+    "description": "Browse, search, get product details, read reviews, and purchase millions of products.",
+    "size": 85,
+    "reviews": 32000000,
+    "ratingAvg": 4.6,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 1700000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 24000000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/snapchat",
+    "title": "Snapchat",
+    "companyName": "Snap Inc",
+    "id": 15,
+    "description": "Snapchat is a fast and fun way to share the moment with your best friends and family.",
+    "size": 230,
+    "reviews": 31000000,
+    "ratingAvg": 4.2,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 3000000 },
+      { "name": "2 star", "count": 1500000 },
+      { "name": "3 star", "count": 3500000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 18000000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/tinder",
+    "title": "Tinder: Dating app. Meet. Chat",
+    "companyName": "Tinder LLC",
+    "id": 16,
+    "description": "With 30 billion matches to date, Tinder is the world’s most popular app for meeting new people.",
+    "size": 140,
+    "reviews": 5800000,
+    "ratingAvg": 3.9,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 1100000 },
+      { "name": "2 star", "count": 500000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 1000000 },
+      { "name": "5 star", "count": 2500000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/reddit",
+    "title": "Reddit",
+    "companyName": "reddit Inc.",
+    "id": 17,
+    "description": "Reddit is the place where people come together to have the most authentic and interesting conversations.",
+    "size": 125,
+    "reviews": 3800000,
+    "ratingAvg": 4.4,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 250000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 2500000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/discord",
+    "title": "Discord: Talk, Chat & Hang Out",
+    "companyName": "Discord Inc.",
+    "id": 18,
+    "description": "Discord is where you can make a home for your communities and friends to stay close and have fun.",
+    "size": 185,
+    "reviews": 5500000,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 350000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 3900000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/telegram",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 19,
+    "description": "Pure instant messaging — simple, fast, secure, and synced across all your devices.",
+    "size": 95,
+    "reviews": 14000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 900000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star", "count": 1800000 },
+      { "name": "5 star", "count": 10000000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/microsoftteams",
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft Corporation",
+    "id": 20,
+    "description": "Whether you're connecting with your community or coordinating with your team, Microsoft Teams brings it all together.",
+    "size": 250,
+    "reviews": 6200000,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 350000 },
+      { "name": "4 star", "count": 900000 },
+      { "name": "5 star", "count": 4500000 }
+    ]
+  }
+]

@@ -1,12 +1,13 @@
 import React from "react";
 import logoImg from "../../assets/logo.png";
 import github from "../../assets/fi_2111432.svg";
+import { Link } from "react-router";
 
 const links = (
   <>
-    <li>Home</li>
-    <li>Apps</li>
-    <li>Installation</li>
+    <Link to={"/"}>Home</Link>
+    <Link to={"/apps"}>Apps</Link>
+    <Link to={"/installedApps"}>Installation</Link>
   </>
 );
 
@@ -34,12 +35,12 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2"
           >
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl ms-5 ">
+        <a className="btn btn-ghost text-xl md:ms-5 ">
           <img className="w-10" src={logoImg} alt="" />
           <h2 className="bg-clip-text text-transparent bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
             HERO.IO
@@ -47,10 +48,10 @@ const Navbar = () => {
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 space-x-5">{links}</ul>
+        <ul className="menu menu-horizontal px-1 space-x-5 text-xl">{links}</ul>
       </div>
       <div className="navbar-end me-7">
-        <a className="btn rounded-xl btn-lg bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
+        <a className="btn rounded-xl bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
           <img src={github} alt="" />
           Contribute
         </a>

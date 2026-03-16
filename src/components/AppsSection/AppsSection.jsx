@@ -1,0 +1,29 @@
+import React from "react";
+import { Download } from "lucide-react";
+import { Star } from "lucide-react";
+
+const AppsSection = ({ app }) => {
+  const { image, title, downloads, ratingAvg } = app;
+  return (
+    <div className=" shadow-sm border rounded-2xl border-base-300">
+      <figure className="p-5 m-3 bg-base-300">
+        <img className="w-50 mx-auto h-40" src={image} alt="app" />
+      </figure>
+      <div className="my-4 ms-3">
+        <h2 className="card-title">{title}</h2>
+      </div>
+      <div className="flex justify-between mx-3 my-4">
+        <div className="px-2 py-1 rounded flex items-center space-x-2 text-[#00D390] bg-[#F1F5E8]">
+          <Download />
+          <span className="text-xl font-semibold ">{downloads}</span>
+        </div>
+        <div className="px-2 py-1 rounded flex items-center space-x-2 text-[#FF8811] bg-[#FFF0E1]">
+          <Star fill="#FF8811" strokeWidth={0} />
+          <span className="text-xl font-semibold ">{ratingAvg}</span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AppsSection;

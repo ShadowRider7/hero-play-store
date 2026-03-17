@@ -51,7 +51,10 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 space-x-5 text-xl">{links}</ul>
       </div>
       <div className="navbar-end me-7">
-        <a className="btn rounded-xl bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
+        <a
+          href="https://github.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/blob/main/Hero%20IO.fig"
+          className="btn rounded-xl bg-linear-to-r from-[#632EE3] to-[#9F62F2]"
+        >
           <img src={github} alt="" />
           Contribute
         </a>

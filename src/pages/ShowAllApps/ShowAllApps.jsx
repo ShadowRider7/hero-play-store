@@ -12,7 +12,7 @@ const ShowAllApps = () => {
       <p className="mt-2 text-xl text-[#627382]">
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
-      <div className="my-2 flex justify-between items-center">
+      <div className="max-w-380 mx-auto my-2 flex justify-between items-center">
         <h2 className="text-2xl font-semibold">
           ({allApps.length}) Apps Found
         </h2>
@@ -31,7 +31,7 @@ const ShowAllApps = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <div className="max-w-380 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {allApps.map((app) => (
           <AppsSection key={app.id} app={app}></AppsSection>
         ))}

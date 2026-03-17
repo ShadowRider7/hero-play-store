@@ -45,7 +45,7 @@ const Home = () => {
           <img src={hero} alt="" />
         </div>
       </section>
-      <section className="pt-10 pb-5 bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
+      <section className=" pt-10 pb-5 bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
         <div className="text-4xl text-center text-white font-bold mt-3">
           Trusted by Millions, Built for You
         </div>
@@ -67,7 +67,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="max-w-380 mx-auto">
         <div className="text-center mt-10">
           <h2 className="text-5xl font-bold">Trending Apps</h2>
           <p className=" text-xl mt-4 text-[#627382]">

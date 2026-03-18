@@ -5,7 +5,6 @@ import ShowAllApps from "../pages/ShowAllApps/ShowAllApps";
 import InstalledApps from "../pages/InstalledApps/InstalledApps";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import AppDetailsBig from "../pages/AppDetails/AppDetailsBig";
-import FallBack from "../components/Fallback/FallBack";
 
 export const router = createBrowserRouter([
   {
@@ -24,13 +23,13 @@ export const router = createBrowserRouter([
       {
         path: "/apps",
         loader: () => fetch("/heroApps.json"),
-        hydrateFallbackElement: <FallBack></FallBack>,
+
         Component: ShowAllApps,
       },
       {
         path: "/apps/:id",
         loader: () => fetch("/heroApps.json"),
-        hydrateFallbackElement: <FallBack></FallBack>,
+
         Component: AppDetailsBig,
       },
       {

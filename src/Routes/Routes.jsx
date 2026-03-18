@@ -34,7 +34,7 @@ export const router = createBrowserRouter([
         Component: AppDetailsBig,
       },
       {
-        path: "/installedApps",
+        path: "/installation",
         Component: InstalledApps,
       },
     ],

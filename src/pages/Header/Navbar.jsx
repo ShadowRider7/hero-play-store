@@ -1,13 +1,28 @@
 import React from "react";
 import logoImg from "../../assets/logo.png";
 import github from "../../assets/fi_2111432.svg";
-import { Link, Links } from "react-router";
+import { Link, NavLink } from "react-router";
+
+const navLinkClass = ({ isActive }) =>
+  `text-2xl font-medium pb-1 border-b-2 transition ${
+    isActive
+      ? " bg-clip-text md:border-purple-600 text-transparent bg-linear-to-r from-[#632EE3] to-[#9F62F2]"
+      : "text-gray-800  border-transparent  hover:bg-gray-200"
+  }`;
 
 const links = (
   <>
-    <Link to={"/"}>Home</Link>
-    <Link to={"/apps"}>Apps</Link>
-    <Link to={"/installedApps"}>Installation</Link>
+    <NavLink to="/" className={navLinkClass}>
+      Home
+    </NavLink>
+
+    <NavLink to="/apps" className={navLinkClass}>
+      Apps
+    </NavLink>
+
+    <NavLink to="/installation" className={navLinkClass}>
+      Installation
+    </NavLink>
   </>
 );
 
@@ -49,13 +64,11 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 space-x-5 text-xl">
-            {links}
-          </ul>
+          <ul className="flex items-center gap-12">{links}</ul>
         </div>
         <div className="navbar-end ">
           <a
-            href="https://github.com/Apollo-Level2-Web-Dev/Mission-Restart-A3/blob/main/Hero%20IO.fig"
+            href="https://github.com/Apollo-Level2-Web-Dev/Mission-Restart-A3"
             className="btn rounded-xl bg-linear-to-r from-[#632EE3] to-[#9F62F2]"
           >
             <img src={github} alt="" />

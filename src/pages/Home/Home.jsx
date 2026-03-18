@@ -30,14 +30,21 @@ const Home = () => {
           </p>
         </div>
         <div className="flex justify-center space-x-3 items-center mt-8">
-          <div className="btn  w-40  rounded p-2">
+          <Link
+            to={"https://play.google.com/store/apps"}
+            className="btn  w-40  rounded p-2"
+          >
             <img className="w-6" src={playStore} alt="" />
             <span className="font-bold">Google Play</span>
-          </div>
-          <div className="btn w-40 rounded p-2">
+          </Link>
+
+          <Link
+            to={"https://www.apple.com/app-store/"}
+            className="btn w-40 rounded p-2"
+          >
             <img className="w-6" src={appStore} alt="" />
             <span className="font-bold"> App Store </span>
-          </div>
+          </Link>
         </div>
       </section>
       <section>

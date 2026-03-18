@@ -74,7 +74,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="max-w-380 mx-auto">
+      <section className="max-w-7xl mx-auto">
         <div className="text-center mt-10">
           <h2 className="text-5xl font-bold">Trending Apps</h2>
           <p className=" text-xl mt-4 text-[#627382]">

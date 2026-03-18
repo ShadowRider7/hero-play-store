@@ -2,9 +2,9 @@ import React from "react";
 import iconDownload from "../../assets/icon-downloads.png";
 import iconRating from "../../assets/icon-ratings.png";
 import { Link } from "react-router";
-
 const AppsSection = ({ app }) => {
   const { image, title, downloads, ratingAvg, id } = app;
+
   return (
     <Link to={`/apps/${id}`}>
       <div className=" shadow-sm border rounded-2xl border-base-300">

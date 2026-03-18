@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import iconDwn from "../../assets/icon-downloads.png";
 import iconRat from "../../assets/icon-ratings.png";
 import iconReview from "../../assets/icon-review.png";
 
 import RatinhChart from "../../components/RatingChart/RatinhChart";
+import { addToStoreDB } from "../../components/Utilities/AddToDB";
 
 const AppDetailsBig = () => {
   const { id } = useParams();
@@ -22,9 +23,13 @@ const AppDetailsBig = () => {
     size,
     title,
   } = singleApp;
-  console.log(singleApp);
+  const [status, setStatus] = useState(false);
+  const handleInstalledApps = (id) => {
+    addToStoreDB(id);
+    setStatus(true);
+  };
   return (
-    <div className="max-w-380 mx-auto">
+    <div className="max-w-7xl mx-auto">
       <section className="flex flex-wrap gap-5 mt-15">
         <div>
           <img
@@ -59,8 +64,12 @@ const AppDetailsBig = () => {
             </div>
           </div>
           <div className="mt-7">
-            <button className="btn text-white bg-[#00D390]">
-              Install Now ({size} MB)
+            <button
+              disabled={status}
+              onClick={() => handleInstalledApps(appId)}
+              className="btn text-white bg-[#00D390]"
+            >
+              {status ? `Installed` : `Install Now (${size} MB`}
             </button>
           </div>
         </div>

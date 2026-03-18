@@ -35,6 +35,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/installation",
+        loader: () => fetch("/heroApps.json"),
         Component: InstalledApps,
       },
     ],

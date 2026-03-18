@@ -3,7 +3,7 @@ import heroIcon from "./../../assets/logo.png";
 const Footer = () => {
   return (
     <div className="bg-black mt-5">
-      <div className="max-w-380 mx-auto">
+      <div className="max-w-7xl mx-auto">
         <footer className="flex flex-col md:flex-row  text-white py-5 ">
           <div className="flex-1 mx-5 mb-3">
             <div className="flex space-x-2 mb-2">

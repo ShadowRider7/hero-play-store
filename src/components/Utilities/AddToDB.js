@@ -9,9 +9,10 @@ const getStoredApps = () => {
 };
 const addToStoreDB = (id) => {
   const storedApps = getStoredApps();
-
-  storedApps.push(id);
-  const data = JSON.stringify(storedApps);
-  localStorage.setItem("installList", data);
+  if (!storedApps.includes(id)) {
+    storedApps.push(id);
+    const data = JSON.stringify(storedApps);
+    localStorage.setItem("installList", data);
+  }
 };
 export { addToStoreDB, getStoredApps };

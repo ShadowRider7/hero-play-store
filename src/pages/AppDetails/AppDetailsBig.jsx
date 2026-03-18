@@ -1,17 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import iconDwn from "../../assets/icon-downloads.png";
 import iconRat from "../../assets/icon-ratings.png";
 import iconReview from "../../assets/icon-review.png";
 
 import RatinhChart from "../../components/RatingChart/RatinhChart";
-import { addToStoreDB } from "../../components/Utilities/AddToDB";
+import {
+  addToStoreDB,
+  getStoredApps,
+} from "../../components/Utilities/AddToDB";
 
 const AppDetailsBig = () => {
   const { id } = useParams();
   const appId = parseInt(id);
   const data = useLoaderData();
   const singleApp = data.find((app) => app.id === appId);
+
+  const [installedApps, setInstalledApps] = useState(getStoredApps());
+  const isInstalled = installedApps.includes(appId);
   const {
     ratings,
     companyName,
@@ -23,10 +29,14 @@ const AppDetailsBig = () => {
     size,
     title,
   } = singleApp;
-  const [status, setStatus] = useState(false);
+
+  useEffect(() => {
+    setInstalledApps(getStoredApps());
+  }, [appId]);
+
   const handleInstalledApps = (id) => {
     addToStoreDB(id);
-    setStatus(true);
+    setInstalledApps(getStoredApps());
   };
   return (
     <div className="max-w-7xl mx-auto">
@@ -65,11 +75,11 @@ const AppDetailsBig = () => {
           </div>
           <div className="mt-7">
             <button
-              disabled={status}
+              disabled={isInstalled}
               onClick={() => handleInstalledApps(appId)}
               className="btn text-white bg-[#00D390]"
             >
-              {status ? `Installed` : `Install Now (${size} MB`}
+              {isInstalled ? "Installed" : `Install Now (${size} MB)`}
             </button>
           </div>
         </div>

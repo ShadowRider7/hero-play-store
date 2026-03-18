@@ -16,10 +16,7 @@ export const router = createBrowserRouter([
         loader: () => fetch("/heroApps.json"),
         Component: Home,
       },
-      {
-        path: "*",
-        Component: ErrorPage,
-      },
+
       {
         path: "/apps",
         loader: () => fetch("/heroApps.json"),
@@ -36,6 +33,10 @@ export const router = createBrowserRouter([
         path: "/installation",
         loader: () => fetch("/heroApps.json"),
         Component: InstalledApps,
+      },
+      {
+        path: "*",
+        Component: ErrorPage,
       },
     ],
   },

@@ -17,7 +17,11 @@ const AppsSection = ({ app }) => {
         <div className="flex justify-between mx-3 my-4">
           <div className="px-2 py-1 rounded-md flex items-center space-x-2 text-[#00D390] bg-[#F1F5E8]">
             <img className="w-5" src={iconDownload} alt="" />
-            <span className="text-xl font-semibold ">{downloads}</span>
+            <span className="text-xl font-semibold ">
+              {new Intl.NumberFormat("en-US", { notation: "compact" }).format(
+                downloads,
+              )}
+            </span>
           </div>
           <div className="px-2 py-1 rounded-md flex items-center space-x-2 text-[#FF8811] bg-[#FFF0E1]">
             <img className="w-5" src={iconRating} alt="" />

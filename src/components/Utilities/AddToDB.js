@@ -15,4 +15,10 @@ const addToStoreDB = (id) => {
     localStorage.setItem("installList", data);
   }
 };
-export { addToStoreDB, getStoredApps };
+const removeFromDB = (id) => {
+  const storedApps = getStoredApps();
+  const updated = storedApps.filter((appId) => appId !== id);
+  const data = JSON.stringify(updated);
+  localStorage.setItem("installList", data);
+};
+export { addToStoreDB, getStoredApps, removeFromDB };

@@ -68,7 +68,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end ">
           <a
-            href="https://github.com/Apollo-Level2-Web-Dev/Mission-Restart-A3"
+            href="https://github.com/ShadowRider7"
             className="btn rounded-xl bg-linear-to-r from-[#632EE3] to-[#9F62F2]"
           >
             <img src={github} alt="" />

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import iconDwn from "../../assets/icon-downloads.png";
 import iconRat from "../../assets/icon-ratings.png";
@@ -9,15 +9,13 @@ import {
   addToStoreDB,
   getStoredApps,
 } from "../../components/Utilities/AddToDB";
+import Swal from "sweetalert2";
 
 const AppDetailsBig = () => {
   const { id } = useParams();
   const appId = parseInt(id);
   const data = useLoaderData();
   const singleApp = data.find((app) => app.id === appId);
-
-  const [installedApps, setInstalledApps] = useState(getStoredApps());
-  const isInstalled = installedApps.includes(appId);
   const {
     ratings,
     companyName,
@@ -30,14 +28,30 @@ const AppDetailsBig = () => {
     title,
   } = singleApp;
 
-  useEffect(() => {
-    setInstalledApps(getStoredApps());
-  }, [appId]);
+  const [installedApps, setInstalledApps] = useState(() => getStoredApps());
+
+  const isInstalled = installedApps.includes(appId);
 
   const handleInstalledApps = (id) => {
     addToStoreDB(id);
     setInstalledApps(getStoredApps());
+    Toast.fire({
+      icon: "success",
+      title: `${title} has been installed!`,
+    });
   };
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    },
+  });
+
   return (
     <div className="max-w-7xl mx-auto">
       <section className="flex flex-wrap gap-5 mt-15">
@@ -62,7 +76,11 @@ const AppDetailsBig = () => {
           <div className="flex gap-10">
             <div className="space-y-1">
               <img src={iconDwn} alt="" /> <p>Downloads</p>{" "}
-              <span className="font-bold text-4xl">{downloads}</span>
+              <span className="font-bold text-4xl">
+                {new Intl.NumberFormat("en-US", { notation: "compact" }).format(
+                  downloads,
+                )}
+              </span>
             </div>
             <div className="space-y-1">
               <img src={iconRat} alt="" /> <p>Average Ratings</p>
@@ -70,7 +88,13 @@ const AppDetailsBig = () => {
             </div>
             <div className="space-y-1">
               <img src={iconReview} alt="" /> <p>Total Reviews</p>
-              <span className="font-bold text-4xl">{reviews}</span>
+              <span className="font-bold text-4xl">
+                <p className="font-bold">
+                  {new Intl.NumberFormat("en-US", {
+                    notation: "compact",
+                  }).format(reviews)}
+                </p>
+              </span>
             </div>
           </div>
           <div className="mt-7">

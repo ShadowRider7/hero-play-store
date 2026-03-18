@@ -76,7 +76,12 @@ const AppDetailsBig = () => {
           <div className="flex gap-10">
             <div className="space-y-1">
               <img src={iconDwn} alt="" /> <p>Downloads</p>{" "}
-              <span className="font-bold text-4xl">{downloads}</span>
+              <span className="font-bold text-4xl">
+                {" "}
+                {new Intl.NumberFormat("en-US", { notation: "compact" }).format(
+                  downloads,
+                )}
+              </span>
             </div>
             <div className="space-y-1">
               <img src={iconRat} alt="" /> <p>Average Ratings</p>
@@ -84,7 +89,12 @@ const AppDetailsBig = () => {
             </div>
             <div className="space-y-1">
               <img src={iconReview} alt="" /> <p>Total Reviews</p>
-              <span className="font-bold text-4xl">{reviews}</span>
+              <span className="font-bold text-4xl">
+                {" "}
+                {new Intl.NumberFormat("en-US", { notation: "compact" }).format(
+                  reviews,
+                )}
+              </span>
             </div>
           </div>
           <div className="mt-7">
